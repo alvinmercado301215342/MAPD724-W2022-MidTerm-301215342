@@ -1,3 +1,8 @@
+//  MAPD724-W2022-MidTerm-301215342
+//  Student ID: 301215342
+//  Created by: Alvin Mercado on 2022-03-06.
+//  App description: Mail pilot in landscape mode.
+
 import UIKit
 import AVFoundation
 import SpriteKit
@@ -26,7 +31,7 @@ class GameScene: SKScene
         
         // add ocean to the scene
         ocean = Ocean() // allocate memory
-        ocean?.position = CGPoint(x: 0, y: 773)
+        ocean?.position = CGPoint(x: 773, y: 0)
         addChild(ocean!) // add the ocean to the scene
         
         // add island to the scene
@@ -35,11 +40,11 @@ class GameScene: SKScene
         
         // add plane to the scene
         plane = Plane()
-        plane?.position = CGPoint(x: 0, y: -495)
+        plane?.position = CGPoint(x: -495, y: 0)
         addChild(plane!)
         
         // add 3 clouds to the scene
-        for index in 0...2
+        for index in 0...1
         {
             let cloud: Cloud = Cloud()
             clouds.append(cloud)
@@ -72,17 +77,17 @@ class GameScene: SKScene
     
     func touchDown(atPoint pos : CGPoint)
     {
-        plane?.TouchMove(newPos: CGPoint(x: pos.x, y: -495))
+        plane?.TouchMove(newPos: CGPoint(x: -495, y: pos.y))
     }
     
     func touchMoved(toPoint pos : CGPoint)
     {
-        plane?.TouchMove(newPos: CGPoint(x: pos.x, y: -495))
+        plane?.TouchMove(newPos: CGPoint(x: -495, y: pos.y))
     }
     
     func touchUp(atPoint pos : CGPoint)
     {
-        plane?.TouchMove(newPos: CGPoint(x: pos.x, y: -495))
+        plane?.TouchMove(newPos: CGPoint(x: -495, y: pos.y))
         
     }
     

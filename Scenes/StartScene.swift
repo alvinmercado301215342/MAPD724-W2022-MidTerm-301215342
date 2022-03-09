@@ -1,3 +1,8 @@
+//  MAPD724-W2022-MidTerm-301215342
+//  Student ID: 301215342
+//  Created by: Alvin Mercado on 2022-03-06.
+//  App description: Mail pilot in landscape mode.
+
 import SpriteKit
 import GameplayKit
 
@@ -16,7 +21,7 @@ class StartScene: SKScene
         
         // add ocean to the scene
         ocean = Ocean() // allocate memory
-        ocean?.position = CGPoint(x: 0, y: 773)
+        ocean?.position = CGPoint(x: 773, y: 0)
         addChild(ocean!) // add the ocean to the scene
     }
     

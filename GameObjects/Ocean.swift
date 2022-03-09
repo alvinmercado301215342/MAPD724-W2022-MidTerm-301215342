@@ -1,3 +1,8 @@
+//  MAPD724-W2022-MidTerm-301215342
+//  Student ID: 301215342
+//  Created by: Alvin Mercado on 2022-03-06.
+//  App description: Mail pilot in landscape mode.
+
 import GameplayKit
 import SpriteKit
 
@@ -18,7 +23,7 @@ class Ocean : GameObject
     // LifeCycle Functions
     override func CheckBounds()
     {
-        if(position.y <= -773)
+        if(position.x <= -773)
         {
             Reset()
         }
@@ -26,7 +31,7 @@ class Ocean : GameObject
     
     override func Reset()
     {
-        position.y = 773
+        position.x = 773
     }
     
     // initialization
@@ -44,6 +49,6 @@ class Ocean : GameObject
     
     func Move()
     {
-        position.y -= verticalSpeed!
+        position.x -= verticalSpeed!
     }
 }

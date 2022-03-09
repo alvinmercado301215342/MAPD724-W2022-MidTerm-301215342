@@ -1,3 +1,8 @@
+//  MAPD724-W2022-MidTerm-301215342
+//  Student ID: 301215342
+//  Created by: Alvin Mercado on 2022-03-06.
+//  App description: Mail pilot in landscape mode.
+
 import GameplayKit
 import SpriteKit
 
@@ -18,7 +23,7 @@ class Cloud : GameObject
     // LifeCycle Functions
     override func CheckBounds()
     {
-        if(position.y <= -756)
+        if(position.x <= -756)
         {
             Reset()
         }
@@ -35,11 +40,11 @@ class Cloud : GameObject
         
         // get a pseudo random number -262 to 262
         let randomX:Int = (randomSource?.nextInt(upperBound: 524))! - 262
-        position.x = CGFloat(randomX)
+        position.y = CGFloat(randomX)
         
         // get a pseudo random number 756 to 776
         let randomY:Int = (randomSource?.nextInt(upperBound: 20))! + 756
-        position.y = CGFloat(randomY)
+        position.x = CGFloat(randomY)
         
         isCollding = false
     }
@@ -60,7 +65,7 @@ class Cloud : GameObject
     
     func Move()
     {
-        position.x -= horizontalSpeed!
-        position.y -= verticalSpeed!
+        position.x -= verticalSpeed!
+        position.y -= horizontalSpeed!
     }
 }

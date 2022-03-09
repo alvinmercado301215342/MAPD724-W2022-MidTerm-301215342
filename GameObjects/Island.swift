@@ -1,3 +1,8 @@
+//  MAPD724-W2022-MidTerm-301215342
+//  Student ID: 301215342
+//  Created by: Alvin Mercado on 2022-03-06.
+//  App description: Mail pilot in landscape mode.
+
 import GameplayKit
 import SpriteKit
 
@@ -7,7 +12,7 @@ class Island : GameObject
     // constructor / initializer
     init()
     {
-        super.init(imageString: "island", initialScale: 2.0)
+        super.init(imageString: "island", initialScale: 1.0)
         Start()
     }
     
@@ -18,7 +23,7 @@ class Island : GameObject
     // LifeCycle Functions
     override func CheckBounds()
     {
-        if(position.y <= -730)
+        if(position.x <= -730)
         {
             Reset()
         }
@@ -26,10 +31,10 @@ class Island : GameObject
     
     override func Reset()
     {
-        position.y = 730
+        position.x = 730
         // get a pseudo random number -313 to 313
         let randomX:Int = (randomSource?.nextInt(upperBound: 616))! - 313
-        position.x = CGFloat(randomX)
+        position.y = CGFloat(randomX)
         isCollding = false
     }
     
@@ -49,6 +54,6 @@ class Island : GameObject
     
     func Move()
     {
-        position.y -= verticalSpeed!
+        position.x -= verticalSpeed!
     }
 }

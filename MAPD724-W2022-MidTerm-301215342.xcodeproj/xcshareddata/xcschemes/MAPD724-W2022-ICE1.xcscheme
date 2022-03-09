@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E922296E278FAAC600353E41"
-               BuildableName = "AlvinMercado-MAPD724-ICE4.app"
-               BlueprintName = "AlvinMercado-MAPD724-ICE4"
-               ReferencedContainer = "container:AlvinMercado-MAPD724-ICE4.xcodeproj">
+               BuildableName = "MAPD724-W2022-MidTerm-301215342.app"
+               BlueprintName = "MAPD724-W2022-MidTerm-301215342"
+               ReferencedContainer = "container:MAPD724-W2022-MidTerm-301215342.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,9 +45,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E922296E278FAAC600353E41"
-            BuildableName = "AlvinMercado-MAPD724-ICE4.app"
-            BlueprintName = "AlvinMercado-MAPD724-ICE4"
-            ReferencedContainer = "container:AlvinMercado-MAPD724-ICE4.xcodeproj">
+            BuildableName = "MAPD724-W2022-MidTerm-301215342.app"
+            BlueprintName = "MAPD724-W2022-MidTerm-301215342"
+            ReferencedContainer = "container:MAPD724-W2022-MidTerm-301215342.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E922296E278FAAC600353E41"
-            BuildableName = "AlvinMercado-MAPD724-ICE4.app"
-            BlueprintName = "AlvinMercado-MAPD724-ICE4"
-            ReferencedContainer = "container:AlvinMercado-MAPD724-ICE4.xcodeproj">
+            BuildableName = "MAPD724-W2022-MidTerm-301215342.app"
+            BlueprintName = "MAPD724-W2022-MidTerm-301215342"
+            ReferencedContainer = "container:MAPD724-W2022-MidTerm-301215342.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
